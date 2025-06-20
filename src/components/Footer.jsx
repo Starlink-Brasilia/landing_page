@@ -1,26 +1,28 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Wifi, Phone, Mail, MapPin, Instagram } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Instagram, Mail, MapPin, Phone, Wifi } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/5547999414770?text=Olá! Gostaria de saber mais sobre o aluguel de Starlink.', '_blank');
+    window.open(
+      "https://wa.me/5547999414770?text=Olá! Gostaria de saber mais sobre o aluguel de Starlink.",
+      "_blank"
+    );
   };
 
   const handleInstagramClick = () => {
-    window.open('https://instagram.com/starlink_brasilia', '_blank');
+    window.open("https://instagram.com/starlinkbrasilia", "_blank");
   };
 
   const handleEmailClick = () => {
-    window.open('mailto:contato@starlinkbrasilia.com.br');
+    window.open("mailto:contato@starlinkbrasilia.com.br");
   };
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -40,9 +42,11 @@ const Footer = () => {
               <div className="w-8 h-8 gradient-orange rounded-lg flex items-center justify-center">
                 <Wifi className="w-5 h-5 text-white" />
               </div>
-              <span className="text-xl font-bold gradient-text">Starlink Brasília</span>
+              <span className="text-xl font-bold gradient-text">
+                Starlink Brasília
+              </span>
             </motion.div>
-            
+
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -50,7 +54,8 @@ const Footer = () => {
               viewport={{ once: true }}
               className="text-gray-300 mb-6 max-w-md"
             >
-              Especialistas em aluguel de internet de alta velocidade Starlink para eventos, produções e áreas rurais em Brasília e região.
+              Especialistas em aluguel de internet de alta velocidade Starlink
+              para eventos, produções e áreas rurais em Brasília e região.
             </motion.p>
 
             <motion.div
@@ -77,11 +82,13 @@ const Footer = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               viewport={{ once: true }}
             >
-              <span className="text-lg font-semibold text-white mb-4 block">Links Rápidos</span>
+              <span className="text-lg font-semibold text-white mb-4 block">
+                Links Rápidos
+              </span>
               <ul className="space-y-2">
                 <li>
                   <button
-                    onClick={() => scrollToSection('inicio')}
+                    onClick={() => scrollToSection("inicio")}
                     className="text-gray-300 hover:text-orange-400 transition-colors"
                   >
                     Início
@@ -89,7 +96,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <button
-                    onClick={() => scrollToSection('servicos')}
+                    onClick={() => scrollToSection("servicos")}
                     className="text-gray-300 hover:text-orange-400 transition-colors"
                   >
                     Serviços
@@ -97,7 +104,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <button
-                    onClick={() => scrollToSection('precos')}
+                    onClick={() => scrollToSection("precos")}
                     className="text-gray-300 hover:text-orange-400 transition-colors"
                   >
                     Preços
@@ -105,7 +112,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <button
-                    onClick={() => scrollToSection('depoimentos')}
+                    onClick={() => scrollToSection("depoimentos")}
                     className="text-gray-300 hover:text-orange-400 transition-colors"
                   >
                     Depoimentos
@@ -113,7 +120,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <button
-                    onClick={() => scrollToSection('contato')}
+                    onClick={() => scrollToSection("contato")}
                     className="text-gray-300 hover:text-orange-400 transition-colors"
                   >
                     Contato
@@ -131,7 +138,9 @@ const Footer = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <span className="text-lg font-semibold text-white mb-4 block">Contato</span>
+              <span className="text-lg font-semibold text-white mb-4 block">
+                Contato
+              </span>
               <ul className="space-y-3">
                 <li>
                   <button
@@ -161,7 +170,7 @@ const Footer = () => {
                     className="flex items-center space-x-2 text-gray-300 hover:text-orange-400 transition-colors group"
                   >
                     <Instagram className="w-4 h-4 group-hover:scale-110 transition-transform" />
-                    <span>@starlink_brasilia</span>
+                    <span>@starlinkbrasilia</span>
                   </button>
                 </li>
               </ul>

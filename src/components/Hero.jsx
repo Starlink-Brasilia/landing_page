@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 
 const Hero = () => {
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/5547999414770?text=Olá! Gostaria de reservar o aluguel de Starlink.', '_blank');
+    window.open('https://wa.me/5547999414770?text=Olá! Gostaria de saber mais sobre aluguel e venda de Starlink.', '_blank');
   };
 
   const scrollToPricing = () => {
@@ -50,8 +50,8 @@ const Hero = () => {
               </h1>
               
               <p className="hero-subtitle mb-8 text-gray-300 max-w-2xl mx-auto lg:mx-0">
-                Aluguel de Starlink em Brasília para eventos remotos, produção de vídeo e áreas rurais. 
-                Conexão confiável onde você mais precisa.
+                Aluguel e venda de Starlink em Brasília para eventos remotos, produção de vídeo e áreas rurais. 
+                Conexão confiável onde você mais precisa, com opção de compra do seu próprio kit.
               </p>
 
               {/* Features Pills */}

@@ -56,7 +56,7 @@ const Pricing = () => {
   ];
 
   const handleWhatsAppClick = (planName) => {
-    const message = `Olá! Gostaria de reservar o plano ${planName}.`;
+    const message = `Olá! Gostaria de reservar o aluguel do ${planName}.`;
     window.open(`https://wa.me/5547999414770?text=${encodeURIComponent(message)}`, '_blank');
   };
 

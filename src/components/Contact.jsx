@@ -1,42 +1,47 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Phone, Mail, MapPin, Clock, MessageCircle } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
+import { Clock, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 
 const Contact = () => {
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/5547999414770?text=Olá! Gostaria de saber mais sobre o aluguel de Starlink.', '_blank');
+    window.open(
+      "https://wa.me/5547999414770?text=Olá! Gostaria de saber mais sobre o aluguel de Starlink.",
+      "_blank"
+    );
   };
 
   const contactInfo = [
     {
       icon: Phone,
-      title: 'Telefone',
-      content: '+55 47 99941-4770',
-      action: () => window.open('tel:+5547999414770')
+      title: "Telefone",
+      content: "+55 47 99941-4770",
+      action: () => window.open("tel:+5547999414770"),
     },
     {
       icon: Mail,
-      title: 'Email',
-      content: 'contato@starlinkbrasilia.com.br',
-      action: () => window.open('mailto:contato@starlinkbrasilia.com.br')
+      title: "Email",
+      content: "contato@starlinkbrasilia.com.br",
+      action: () => window.open("mailto:contato@starlinkbrasilia.com.br"),
     },
     {
       icon: MapPin,
-      title: 'Localização',
-      content: 'Brasília, DF',
-      action: () => {}
+      title: "Localização",
+      content: "Brasília, DF",
+      action: () => {},
     },
     {
       icon: Clock,
-      title: 'Horário',
-      content: 'Segunda a Domingo, 24h',
-      action: () => {}
-    }
+      title: "Horário",
+      content: "Segunda a Domingo, 24h",
+      action: () => {},
+    },
   ];
 
   return (
-    <section id="contato" className="py-20 bg-gradient-to-b from-gray-900 to-black">
+    <section
+      id="contato"
+      className="py-20 bg-gradient-to-b from-gray-900 to-black"
+    >
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -46,11 +51,11 @@ const Contact = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Entre em{' '}
-            <span className="gradient-text">Contato</span>
+            Entre em <span className="gradient-text">Contato</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Pronto para levar internet de alta velocidade para seu evento? Entre em contato conosco e solicite seu orçamento.
+            Pronto para levar internet de alta velocidade para seu evento? Entre
+            em contato conosco e solicite seu orçamento.
           </p>
         </motion.div>
 
@@ -66,7 +71,7 @@ const Contact = () => {
               <h3 className="text-2xl font-bold text-white mb-6 text-center">
                 Informações de Contato
               </h3>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {contactInfo.map((info, index) => (
                   <motion.div
@@ -82,9 +87,7 @@ const Contact = () => {
                       <div className="font-semibold text-white group-hover:text-orange-400 transition-colors">
                         {info.title}
                       </div>
-                      <div className="text-gray-300">
-                        {info.content}
-                      </div>
+                      <div className="text-gray-300">{info.content}</div>
                     </div>
                   </motion.div>
                 ))}
@@ -102,7 +105,8 @@ const Contact = () => {
                   Atendimento Rápido
                 </h3>
                 <p className="text-gray-300 mb-6">
-                  Fale conosco agora mesmo pelo WhatsApp e receba seu orçamento em minutos!
+                  Fale conosco agora mesmo pelo WhatsApp e receba seu orçamento
+                  em minutos!
                 </p>
                 <Button
                   onClick={handleWhatsAppClick}
@@ -120,8 +124,14 @@ const Contact = () => {
                 Informações da Empresa
               </h3>
               <div className="space-y-2 text-gray-300 text-center">
-                <p><strong className="text-orange-400">CNPJ:</strong> 59.760.126/0001-07</p>
-                <p><strong className="text-orange-400">Instagram:</strong> @starlink_brasilia</p>
+                <p>
+                  <strong className="text-orange-400">CNPJ:</strong>{" "}
+                  59.760.126/0001-07
+                </p>
+                <p>
+                  <strong className="text-orange-400">Instagram:</strong>{" "}
+                  @starlinkbrasilia
+                </p>
               </div>
             </div>
           </motion.div>

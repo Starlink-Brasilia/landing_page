@@ -57,7 +57,7 @@ const Features = () => {
             <span className="gradient-text">Starlink Brasília</span>?
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Oferecemos a melhor solução de internet satelital para eventos, produções e áreas rurais em Brasília e região.
+            Oferecemos aluguel e venda da melhor solução de internet satelital para eventos, produções e áreas rurais em Brasília e região.
           </p>
         </motion.div>
 
